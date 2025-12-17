@@ -3,7 +3,7 @@ class Queue {
   private int putloc, getloc; //укахатели на начало и конец очереди
 
   //Конструктор для создания пустой очереди
-  Queue (int size){
+  Queue (int size) {
     q = new char [size + 1]; //выделение памяти для массива
     putloc = getloc = 0;
   }
@@ -46,9 +46,12 @@ class Queue {
     }
   getloc++;
   return q[getloc];
+
   }
+}
+
   class QDemo {
-    public static void main (String args[]) {
+    public static void main(String args[]) {
       Queue bigQ = new Queue(100);
       Queue smallQ = new Queue(4);
       char ch;
@@ -56,17 +59,18 @@ class Queue {
 
       System.out.println("Использование очереди bigQ для сохранения букв алфавита");
 
-      for (i = 0; i < 33; i++)
+      for (i = 0; i < 33; i++) {
         bigQ.put((char) ('А' + i));
 
       System.out.print("Содержимое очереди bigQ: ");
-
-      for (i = 0; i < 33; i++)
+      }
+      
+      for (i = 0; i < 33; i++) {
         ch = bigQ.get();
 
       if (ch != (char) 0)
         System.out.print(ch);
-    }
+      }
 
     System.out.println("\n");
 
@@ -105,7 +109,7 @@ class Queue {
 
   char arr1[] = {'Q', 'W', 'E', 'R', 'T', 'Y'};
   //Создание очереди на основе массива arr1[]
-  Queue = q2 = new Queue(arr1);
+  Queue q2 = new Queue(arr1);
 
   //Помещение символов в очередь q1
   for(i = 0; i < 10; i++)
@@ -119,25 +123,27 @@ class Queue {
   System.out.println();
 
   System.out.println("Очередь q1: ");
-  for (i = 0; i<10; i++{
+  for (i = 0; i<10; i++) {
 	ch = q1.get();
 	System.out.println(ch);
   }
   System.out.println();
 
   System.out.println("Очередь q2: ");
-  for (i = 0; i<10; i++{
+  for (i = 0; i<10; i++) {
 	ch = q2.get();
 	System.out.println(ch);
   }
   System.out.println();
 
   System.out.println("Очередь q3: ");
-  for (i = 0; i<10; i++{
+  for (i = 0; i<10; i++) {
 	ch = q3.get();
 	System.out.println(ch);
   }
   System.out.println();
   }
+ 
   }
-}
+  
+  

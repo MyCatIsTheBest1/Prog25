@@ -1,6 +1,6 @@
 class Quicksort {
 	//Настройка вызова метода быстрой сортировки
-	static void qsort(char [] items) {
+	public static void qsort(char [] items) {
 		qs(items, 0, items.length-1);
 	}
 	//Рекурсивная версия быстрой сортировки массива

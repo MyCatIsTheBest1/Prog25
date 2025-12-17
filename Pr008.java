@@ -33,7 +33,7 @@ class ChkNum {
 }
 class IsFact {
         boolean isFactor(int a, int b) {
-                if((b%a) == 0 return true;
+                if((b%a) == 0) return true;
                 else return false;
         }
 }
@@ -76,7 +76,7 @@ class Pr008 {
                 range = mercedes.range();
                 System.out.println("Mercedes SLC 43 проедет на полном баке: " + range + " км");
 
-                System.out.println("Mercedes SLC 43 потратит " + mercedes.rashTopl(distance) + " литров топлива, чтобы доехать до Москвы")
+                System.out.println("Mercedes SLC 43 потратит " + mercedes.rashTopl(distance) + " литров топлива, чтобы доехать до Москвы");
 
 
                 //Хранение значений в простых типах переменных
@@ -90,7 +90,7 @@ class Pr008 {
                 Auto bmw1, bmw2;
                 bmw1 = bmw;
                 bmw2 = mercedes;
-                bmw1.rash = 14.5
+                bmw1.rash = 14.5;
                 System.out.println("Расход для bmw и bmw1: " + bmw.rash + " " + bmw1.rash);
                 bmw2.rash = 9.99;
                 System.out.println("Расход для bmw2 и mercedes: " + bmw2.rash + " " + mercedes.rash);
